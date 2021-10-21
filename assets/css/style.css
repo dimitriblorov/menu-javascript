@@ -1,0 +1,44 @@
+body {
+  background: #eee;
+}
+aside {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+}
+#menu-opener {
+  cursor: pointer;
+  margin-top: 22px;
+  margin-right: 20px;
+}
+.menu-opener--option {
+  width: 30px;
+  height: 2px;
+  margin: 5px 0;
+  background-color: #000;
+}
+#menu-area {
+  width: 0px;
+  height: 100vh;
+  background: #ccc;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: all ease 0.5s;
+}
+#menu-area ul,
+#menu-area li {
+  padding: 0;
+  list-style: none;
+}
+#menu-area li {
+  display: block;
+  padding: 10px;
+  color: #555;
+  cursor: pointer;
+  font-weight: bold;
+}
+#menu-area li:hover {
+  background: #ddd;
+}
